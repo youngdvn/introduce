@@ -2,8 +2,19 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  transpilePackages: [
+    "antd",
+    "@ant-design/icons",
+    "@ant-design/icons-svg",
+    "@ant-design/nextjs-registry",
+    "rc-util",
+    "rc-pagination",
+    "rc-picker",
+    "rc-notification",
+    "rc-tooltip",
+    "rc-tree",
+    "rc-table",
+  ],
   turbopack: {
     rules: {
       "*.css": {
