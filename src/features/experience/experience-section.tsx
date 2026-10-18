@@ -18,21 +18,21 @@ export function ExperienceSection() {
     return {
       dot: (
         <div
-          className={`w-9 h-9 rounded-full border flex items-center justify-center -ml-2.5 transition-transform hover:scale-110 ${
+          className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition-all duration-300 shadow-sm ${
             isWork
-              ? "bg-[var(--accent-glow)] border-[var(--accent-primary)] text-[var(--accent-primary)]"
+              ? "bg-[var(--bg-secondary)] border-[var(--accent-primary)] text-[var(--accent-primary)] ring-4 ring-[var(--accent-glow)]"
               : "bg-[var(--bg-secondary)] border-[var(--border-subtle)] text-[var(--text-secondary)]"
           }`}
         >
           {isWork ? (
-            <Briefcase className="w-4 h-4" />
+            <Briefcase className="w-4 h-4 text-[var(--accent-primary)]" />
           ) : (
-            <GraduationCap className="w-4 h-4" />
+            <GraduationCap className="w-4 h-4 text-[var(--text-secondary)]" />
           )}
         </div>
       ),
       children: (
-        <Card className="!bg-[var(--bg-secondary)] !border-[var(--border-subtle)] !rounded-2xl !p-2 sm:!p-5 shadow-sm hover:!border-[var(--accent-primary)]/40 hover:scale-[1.01] transition-all ml-2 mb-4">
+        <Card className="!bg-[var(--bg-secondary)] !border-[var(--border-subtle)] !rounded-2xl !p-2 sm:!p-5 shadow-sm hover:!border-[var(--accent-primary)]/40 hover:scale-[1.01] transition-all mb-6">
           <div className="flex flex-wrap items-center justify-between gap-2 mb-1.5">
             <span className="text-xs font-mono font-medium text-[var(--accent-primary)] flex items-center gap-1.5">
               <Calendar className="w-3.5 h-3.5" />

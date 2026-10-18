@@ -125,6 +125,26 @@ textarea.ant-input:focus {
   color: currentColor !important;
 }
 
+/* Ant Design Timeline Custom Dot & Line Alignment */
+.ant-timeline .ant-timeline-item-tail {
+  border-inline-start: 2px solid var(--border-subtle) !important;
+  inset-inline-start: 19px !important;
+  top: 28px !important;
+  height: calc(100% - 28px) !important;
+}
+
+.ant-timeline .ant-timeline-item-head-custom {
+  inset-inline-start: 20px !important;
+  top: 28px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.ant-timeline .ant-timeline-item-content {
+  margin-inline-start: 44px !important;
+}
+
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   * {
