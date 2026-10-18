@@ -53,6 +53,8 @@ export const antDarkTheme: ThemeConfig = {
     Input: {
       colorBgContainer: "#16161D",
       colorBorder: "#2B2B38",
+      colorText: "#F4F4F6",
+      colorTextPlaceholder: "#71717A",
       activeBorderColor: "#38BDF8",
       hoverBorderColor: "#38BDF8",
       borderRadius: 8,
@@ -110,6 +112,10 @@ export const antLightTheme: ThemeConfig = {
     Input: {
       colorBgContainer: "#FFFFFF",
       colorBorder: "#D4D4D8",
+      colorText: "#09090B",
+      colorTextPlaceholder: "#71717A",
+      activeBorderColor: "#0284C7",
+      hoverBorderColor: "#0284C7",
       borderRadius: 8,
     },
     Drawer: {

@@ -83,10 +83,10 @@ export function HeroSection() {
           type="primary"
           size="large"
           href="#projects"
-          className="!bg-[var(--accent-primary)] hover:!opacity-95 !text-black !font-semibold !h-12 !px-8 !rounded-xl !shadow-md !border-none !flex !items-center !gap-2"
+          className="!bg-[var(--accent-primary)] hover:!opacity-95 !font-semibold !h-12 !px-8 !rounded-xl !shadow-md !border-none !flex !items-center !gap-2"
         >
           View My Work
-          <ArrowDown className="w-4 h-4 text-black" />
+          <ArrowDown className="w-4 h-4" />
         </Button>
 
         <Button

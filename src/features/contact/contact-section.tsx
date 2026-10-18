@@ -169,7 +169,11 @@ export function ContactSection() {
                   label={<span className="text-xs font-semibold text-[var(--text-secondary)]">Your Name</span>}
                   rules={[{ required: true, message: "Please enter your name" }]}
                 >
-                  <Input placeholder="John Doe" size="large" className="!rounded-lg" />
+                  <Input
+                    placeholder="John Doe"
+                    size="large"
+                    className="!rounded-lg !bg-[var(--bg-input)] !text-[var(--text-primary)] !border-[var(--border-input)]"
+                  />
                 </Form.Item>
 
                 <Form.Item
@@ -180,7 +184,11 @@ export function ContactSection() {
                     { type: "email", message: "Please enter a valid email address" },
                   ]}
                 >
-                  <Input placeholder="john@example.com" size="large" className="!rounded-lg" />
+                  <Input
+                    placeholder="john@example.com"
+                    size="large"
+                    className="!rounded-lg !bg-[var(--bg-input)] !text-[var(--text-primary)] !border-[var(--border-input)]"
+                  />
                 </Form.Item>
               </div>
 
@@ -189,7 +197,11 @@ export function ContactSection() {
                 label={<span className="text-xs font-semibold text-[var(--text-secondary)]">Subject</span>}
                 rules={[{ required: true, message: "Please enter a subject" }]}
               >
-                <Input placeholder="Project collaboration / Opportunity" size="large" className="!rounded-lg" />
+                <Input
+                  placeholder="Project collaboration / Opportunity"
+                  size="large"
+                  className="!rounded-lg !bg-[var(--bg-input)] !text-[var(--text-primary)] !border-[var(--border-input)]"
+                />
               </Form.Item>
 
               <Form.Item
@@ -200,7 +212,7 @@ export function ContactSection() {
                 <Input.TextArea
                   placeholder="Tell me about your project, goals, or timeline..."
                   rows={4}
-                  className="!rounded-lg"
+                  className="!rounded-lg !bg-[var(--bg-input)] !text-[var(--text-primary)] !border-[var(--border-input)]"
                 />
               </Form.Item>
 
