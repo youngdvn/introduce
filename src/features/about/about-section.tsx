@@ -44,10 +44,10 @@ export function AboutSection() {
                 <Tooltip title={`Download ${profileData.resumeFileName}`}>
                   <Button
                     type="primary"
-                    icon={<DownloadOutlined />}
+                    icon={<DownloadOutlined className="text-white dark:text-black" />}
                     href={`/resume/${profileData.resumeFileName}`}
                     download={profileData.resumeFileName}
-                    className="!bg-[var(--accent-primary)] hover:!opacity-95 !font-semibold !h-10 !px-5 !rounded-lg !border-none"
+                    className="!bg-[var(--accent-primary)] hover:!opacity-95 !text-white dark:!text-black !font-semibold !h-10 !px-5 !rounded-lg !border-none"
                   >
                     Download Resume
                   </Button>

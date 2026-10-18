@@ -85,9 +85,9 @@ export function ProjectCaseStudyView({ project }: ProjectCaseStudyProps) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              icon={<ExternalLink className="w-4 h-4 text-black" />}
+              icon={<ExternalLink className="w-4 h-4 text-white dark:text-black" />}
               size="large"
-              className="!h-11 !px-6 !rounded-xl !bg-[var(--accent-primary)] !text-black !font-semibold !border-none"
+              className="!h-11 !px-6 !rounded-xl !bg-[var(--accent-primary)] hover:!opacity-95 !text-white dark:!text-black !font-semibold !border-none"
             >
               Live Demo
             </Button>
@@ -343,10 +343,10 @@ export function ProjectCaseStudyView({ project }: ProjectCaseStudyProps) {
           <Button
             type="primary"
             size="large"
-            className="!h-11 !px-6 !rounded-xl !bg-[var(--accent-primary)] !text-black !font-semibold !border-none !flex !items-center !gap-2"
+            className="!h-11 !px-6 !rounded-xl !bg-[var(--accent-primary)] hover:!opacity-95 !text-white dark:!text-black !font-semibold !border-none !flex !items-center !gap-2"
           >
             Discuss this Project
-            <ArrowRight className="w-4 h-4 text-black" />
+            <ArrowRight className="w-4 h-4 text-white dark:text-black" />
           </Button>
         </Link>
       </footer>

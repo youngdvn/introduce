@@ -47,8 +47,8 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-[var(--background)]/85 backdrop-blur-md border-b border-[var(--border-subtle)] shadow-sm"
-          : "bg-transparent border-b border-transparent"
+        ? "bg-[var(--background)]/85 backdrop-blur-md border-b border-[var(--border-subtle)] shadow-sm"
+        : "bg-transparent border-b border-transparent"
         }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
@@ -58,9 +58,6 @@ export function Navbar() {
           aria-label="YoungD Home"
           className="flex items-center gap-2 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-primary)] rounded-lg px-2 py-1"
         >
-          <div className="w-8 h-8 rounded-lg bg-[var(--accent-glow)] border border-[var(--accent-primary)]/30 flex items-center justify-center font-mono font-bold text-base text-[var(--accent-primary)] transition-transform group-hover:scale-105">
-            YD
-          </div>
           <span className="font-bold text-lg text-[var(--text-primary)] tracking-tight">
             Young<span className="text-[var(--accent-primary)]">D</span>
           </span>
@@ -78,8 +75,8 @@ export function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={`relative px-3.5 py-1.5 rounded-full text-sm font-medium transition-colors ${isActive
-                    ? "text-[var(--accent-primary)] font-semibold"
-                    : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
+                  ? "text-[var(--accent-primary)] font-semibold"
+                  : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
                   }`}
               >
                 {item.label}
@@ -106,7 +103,7 @@ export function Navbar() {
           <Button
             type="primary"
             href="#contact"
-            className="!hidden lg:!inline-flex !bg-[var(--accent-primary)] hover:!opacity-90 !font-semibold !h-10 !px-4 !rounded-lg !shadow-sm"
+            className="!hidden lg:!inline-flex !bg-[var(--accent-primary)] hover:!opacity-90 !text-white dark:!text-black !font-semibold !h-10 !px-4 !rounded-lg !shadow-sm"
           >
             Get in touch
           </Button>

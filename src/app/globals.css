@@ -110,6 +110,21 @@ textarea.ant-input:focus {
   color: var(--text-secondary) !important;
 }
 
+/* Primary Button Theme Adaptive Text & Icon Contrast */
+.ant-btn-primary {
+  color: #ffffff !important;
+}
+.ant-btn-primary svg {
+  color: currentColor !important;
+}
+
+.dark .ant-btn-primary {
+  color: #000000 !important;
+}
+.dark .ant-btn-primary svg {
+  color: currentColor !important;
+}
+
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   * {

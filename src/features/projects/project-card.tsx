@@ -87,10 +87,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <Link href={`/projects/${project.slug}`}>
               <Button
                 type="primary"
-                className="!bg-[var(--accent-primary)] hover:!opacity-95 !text-black !font-semibold !h-10 !px-5 !rounded-lg !flex !items-center !gap-1.5 !border-none"
+                className="!bg-[var(--accent-primary)] hover:!opacity-95 !text-white dark:!text-black !font-semibold !h-10 !px-5 !rounded-lg !flex !items-center !gap-1.5 !border-none"
               >
                 Case Study
-                <ArrowRight className="w-4 h-4 text-black" />
+                <ArrowRight className="w-4 h-4 text-white dark:text-black" />
               </Button>
             </Link>
 

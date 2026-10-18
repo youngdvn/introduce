@@ -222,8 +222,8 @@ export function ContactSection() {
                   htmlType="submit"
                   size="large"
                   loading={loading}
-                  icon={<Send className="w-4 h-4 text-black" />}
-                  className="!w-full !bg-[var(--accent-primary)] hover:!opacity-95 !text-black !font-semibold !h-12 !rounded-xl !border-none !shadow-md"
+                  icon={<Send className="w-4 h-4 text-white dark:text-black" />}
+                  className="!w-full !bg-[var(--accent-primary)] hover:!opacity-95 !text-white dark:!text-black !font-semibold !h-12 !rounded-xl !border-none !shadow-md"
                 >
                   {loading ? "Sending Message..." : "Send Message"}
                 </Button>
