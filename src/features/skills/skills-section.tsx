@@ -19,7 +19,7 @@ export function SkillsSection() {
     <section id="skills" aria-label="Technical Skills Section" className="max-w-5xl mx-auto px-4 sm:px-6 w-full scroll-mt-20">
       <ScrollReveal direction="up">
         <SectionHeader
-          badge="02 // EXPERTISE"
+          badge="02. EXPERTISE"
           title="Technical Skills & Toolchain"
           description="Structured categories of languages, frameworks, databases, and DevOps tools I use daily."
         />

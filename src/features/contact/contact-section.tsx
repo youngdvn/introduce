@@ -85,7 +85,7 @@ export function ContactSection() {
     <section id="contact" aria-label="Contact Section" className="max-w-5xl mx-auto px-4 sm:px-6 w-full scroll-mt-20">
       <ScrollReveal direction="up">
         <SectionHeader
-          badge="05 // CONTACT"
+          badge="05. CONTACT"
           title="Let's Build Something Together"
           description="Whether you have an engineering question, a project opportunity, or want to collaborate, my inbox is open."
         />

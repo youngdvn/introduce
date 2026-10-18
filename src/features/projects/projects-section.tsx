@@ -15,7 +15,7 @@ export function ProjectsSection() {
     >
       <ScrollReveal direction="up">
         <SectionHeader
-          badge="03 // PORTFOLIO"
+          badge="03. PORTFOLIO"
           title="Featured Engineering Works"
           description="Production-oriented projects built to solve practical challenges with modern software engineering practices."
         />

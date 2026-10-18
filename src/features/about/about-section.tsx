@@ -15,7 +15,7 @@ export function AboutSection() {
     <section id="about" aria-label="About Me Section" className="max-w-5xl mx-auto px-4 sm:px-6 w-full scroll-mt-20">
       <ScrollReveal direction="up">
         <SectionHeader
-          badge="01 // ABOUT"
+          badge="01. ABOUT"
           title="Background & Engineering Mindset"
           description="A look into my journey, core values, and what drives my development approach."
         />
@@ -47,7 +47,7 @@ export function AboutSection() {
                     icon={<DownloadOutlined />}
                     href={`/resume/${profileData.resumeFileName}`}
                     download={profileData.resumeFileName}
-                    className="!bg-[var(--accent-primary)] hover:!opacity-95 !text-black !font-semibold !h-10 !px-5 !rounded-lg !border-none"
+                    className="!bg-[var(--accent-primary)] hover:!opacity-95 !font-semibold !h-10 !px-5 !rounded-lg !border-none"
                   >
                     Download Resume
                   </Button>

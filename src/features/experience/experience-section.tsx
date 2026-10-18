@@ -82,7 +82,7 @@ export function ExperienceSection() {
     >
       <ScrollReveal direction="up">
         <SectionHeader
-          badge="04 // TIMELINE"
+          badge="04. TIMELINE"
           title="Experience & Education"
           description="Formal academic qualifications and hands-on professional development trajectory."
         />
