@@ -46,11 +46,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-[var(--background)]/85 backdrop-blur-md border-b border-[var(--border-subtle)] shadow-sm"
           : "bg-transparent border-b border-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Brand Logo */}
@@ -78,11 +77,10 @@ export function Navbar() {
               <a
                 key={item.href}
                 href={item.href}
-                className={`relative px-3.5 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                  isActive
+                className={`relative px-3.5 py-1.5 rounded-full text-sm font-medium transition-colors ${isActive
                     ? "text-[var(--accent-primary)] font-semibold"
                     : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
-                }`}
+                  }`}
               >
                 {item.label}
                 {isActive && (
@@ -108,7 +106,7 @@ export function Navbar() {
           <Button
             type="primary"
             href="#contact"
-            className="!hidden lg:!inline-flex !bg-[var(--accent-primary)] hover:!opacity-90 !text-black !font-semibold !h-10 !px-4 !rounded-lg !shadow-sm"
+            className="!hidden lg:!inline-flex !bg-[var(--accent-primary)] hover:!opacity-90 !font-semibold !h-10 !px-4 !rounded-lg !shadow-sm"
           >
             Get in touch
           </Button>
