@@ -47,7 +47,7 @@ export const antDarkTheme: ThemeConfig = {
       defaultColor: "#A1A1AA",
     },
     Timeline: {
-      itemPaddingBottom: 28,
+      itemPaddingBottom: 36,
       dotBorderWidth: 2,
     },
     Input: {
@@ -106,7 +106,7 @@ export const antLightTheme: ThemeConfig = {
       borderRadiusSM: 6,
     },
     Timeline: {
-      itemPaddingBottom: 28,
+      itemPaddingBottom: 36,
       dotBorderWidth: 2,
     },
     Input: {

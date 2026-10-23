@@ -18,28 +18,33 @@ export function ExperienceSection() {
     return {
       dot: (
         <div
-          className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition-all duration-300 shadow-sm ${
+          className={`w-10 h-10 min-w-10 min-h-10 shrink-0 aspect-square rounded-full border-2 flex items-center justify-center transition-all duration-300 shadow-sm box-border ${
             isWork
               ? "bg-[var(--bg-secondary)] border-[var(--accent-primary)] text-[var(--accent-primary)] ring-4 ring-[var(--accent-glow)]"
               : "bg-[var(--bg-secondary)] border-[var(--border-subtle)] text-[var(--text-secondary)]"
           }`}
         >
           {isWork ? (
-            <Briefcase className="w-4 h-4 text-[var(--accent-primary)]" />
+            <Briefcase className="w-4 h-4 text-[var(--accent-primary)] shrink-0" />
           ) : (
-            <GraduationCap className="w-4 h-4 text-[var(--text-secondary)]" />
+            <GraduationCap className="w-4 h-4 text-[var(--text-secondary)] shrink-0" />
           )}
         </div>
       ),
       children: (
-        <Card className="!bg-[var(--bg-secondary)] !border-[var(--border-subtle)] !rounded-2xl !p-2 sm:!p-5 shadow-sm hover:!border-[var(--accent-primary)]/40 hover:scale-[1.01] transition-all mb-6">
+        <Card
+          classNames={{
+            body: "!p-4 sm:!p-6",
+          }}
+          className="!bg-[var(--bg-secondary)] !border-[var(--border-subtle)] !rounded-2xl shadow-sm hover:!border-[var(--accent-primary)]/40 hover:scale-[1.01] transition-all"
+        >
           <div className="flex flex-wrap items-center justify-between gap-2 mb-1.5">
             <span className="text-xs font-mono font-medium text-[var(--accent-primary)] flex items-center gap-1.5">
               <Calendar className="w-3.5 h-3.5" />
               {item.period}
             </span>
             {item.current && (
-              <Tag color="cyan" className="!rounded-md !px-2 !text-[11px]">
+              <Tag color="cyan" className="!rounded-md !px-2 !text-[11px] !m-0">
                 Active
               </Tag>
             )}
@@ -62,7 +67,7 @@ export function ExperienceSection() {
               {item.skills.map((skill) => (
                 <Tag
                   key={skill}
-                  className="!border-[var(--border-subtle)] !bg-[var(--bg-primary)] !text-xs !text-[var(--text-muted)] !px-2 !py-0.5 !rounded-md"
+                  className="!border-[var(--border-subtle)] !bg-[var(--bg-primary)] !text-xs !text-[var(--text-muted)] !px-2 !py-0.5 !rounded-md !m-0"
                 >
                   {skill}
                 </Tag>
